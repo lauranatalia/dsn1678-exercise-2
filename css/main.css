@@ -104,6 +104,11 @@ body {
   top: 0;
 
   background-color: rgba(127, 219, 255, 0.6);
+  	-ms-animation: slide-up 500ms ease-out;
+	-moz-animation: slide-up 500ms ease-out;
+	-o-animation: slide-up 500ms ease-out;
+	-webkit-animation: slide-up 500ms ease-out;
+	animation: slide-up 500ms ease-out;
 }
 
 .chart__count {
@@ -152,6 +157,22 @@ body {
 .chart__bar:focus,
 .chart__bar:active {
 	background-color: #74DDFA;
-	
-	
+}
+
+@-webkit-keyframes slide-up {
+	0% {
+		top: 10em;
+	}
+	100% {
+		top: 0;
+	}
+}
+
+@keyframes slide-up {
+	0% {
+		top: 10em;
+	}
+	100% {
+		top: 0;
+	}
 }
